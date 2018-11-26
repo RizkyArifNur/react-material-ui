@@ -24,8 +24,10 @@ const styles = {
         marginBottom: '12px'
     },
     submit: {
-        width: '100%',
-        marginTop: '20px'
+        width: '30%',
+        marginTop: '60px',
+        left: '50%',
+        transform: 'translate(-50%,0)'
     },
     root: {
         width: '100%',
@@ -66,7 +68,7 @@ class LoginPage extends Component {
                     <Card className={classes.card}>
                         <CardContent>
                             <Typography className={classes.title} variant="h6">Login Page Material Ui</Typography>
-                            <Typography variant="subtitle2" color='textSecondary'  > Hello Dude!!</Typography>
+                            <Typography variant="subtitle2" color='textSecondary'> Hello Coders!!</Typography>
                             <form onSubmit={this.handleSubmit}>
                                 <TextField id="text-username" className={classes.textField} variant="standard"
                                     label="Username" value={this.state.username} onChange={this.handleChange} />
